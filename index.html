@@ -1,0 +1,52 @@
+
+<html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+      <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+     <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 id="heading">FACE RECOGNITION WEB PAGE</h3>
+                <br>
+                <br>
+                <h4 id="about"> Modal is trained to identity the following objects</h4>
+<br><br>
+<b class="object">
+    Me
+    <hr>
+    Father 
+    <hr>
+    Mother
+    <hr>
+    Brother
+    <hr>
+        </b>
+        <br><br>
+        <label id="webcam">Webcam view :-</label>
+<br>
+<div id="camera"></div>
+<br><br>
+<div id="result"></div>
+      <br><br>
+    <button id="capture" onclick="capture()" class="btn btn-info">Capture Image</button>
+      <br><br>
+    <button id="identify" onclick="identify()" class=" btn btn-success">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id="result_person_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_person_accracy"></span> </p>
+            </center>
+        </div>
+<script src="index.js"></script>
+    </body>
+     </html>
